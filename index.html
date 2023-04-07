@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/styles/style.css" />
+        <script src="/script/main.js"></script>
+        <title>Calculator with WebWorker</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="container">
+                <div class="container-title">
+                    <h1 class="title">Calculator with WebWorker</h1>
+                </div>
+
+                <div class="container-input">
+                    <div class="input-div">
+                        <p class="subtitle">Operand:</p>
+                        <input id="input1" type="text" />
+                    </div>
+                    <div class="input-div">
+                        <p class="subtitle">Operand:</p>
+                        <input id="input2" type="text" />
+                    </div>
+                    <div class="input-div">
+                        <div class="operations">
+                            <button id="add-button" class="button">+</button>
+                        </div>
+                        <div class="operations">
+                            <button id="rem-button" class="button">-</button>
+                        </div>
+                        <div class="operations">
+                            <button id="mul-button" class="button">*</button>
+                        </div>
+                        <div class="operations">
+                            <button id="div-button" class="button">/</button>
+                        </div>
+                    </div>
+                    <div class="input-div">
+                        <p class="subtitle">Result:</p>
+                        <input id="input3" type="text"/>
+                    </div>
+                    <div class="input-div">
+                        <div class="operations">
+                            <button id="clear-button" class="button">Clear</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

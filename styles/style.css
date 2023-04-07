@@ -1,0 +1,180 @@
+/* Обнуление стилей*/
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus, :active {
+    outline: none;
+}
+
+a:focus, a:active {
+    outline: none;
+}
+
+nav, footer, header, aside {
+    display: block;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner{
+    padding: 0;
+    border: 0;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+
+/*--------------------------------------------*/
+.wrapper{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(102, 75, 133);
+}
+
+.container{
+
+    margin: auto;
+    border-radius: 20px;
+    background-color: rgb(255, 246, 235);
+    border: 2px solid rgb(255, 246, 235);
+}
+
+.container-input{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px;
+    
+}
+.container-title{
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.title{
+    font-size: 24px;
+    
+}
+
+.input-div{
+    display: flex;
+    flex-direction: row;
+    padding: 15px 0 15px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtitle{
+    font-size: 20px;
+    margin-right: 8px;    
+    text-align: center;
+}
+
+#input1, #input2{
+    padding: 8px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px solid rgb(188, 188, 255);
+}
+
+.operations{
+    margin: 0 auto;
+}
+
+.button{
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 48px;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    padding: 5px 36px;
+    letter-spacing: 0.2px;
+    background-color: rgb(255, 164, 191);
+    margin: 10px 0px;
+    transition: all 0.3s ease 0s;
+}
+
+.button:hover{
+    color: white;
+}
+
+.operations:not(:last-child){
+    margin-right: 7px;
+}
+
+#input3{
+    padding: 8px;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    border: 2px solid rgb(255, 165, 176);
+}
+
+#clear-button{
+    color: #0d5c63;
+    background-color: white;
+    border: 1px solid #0d5c63;
+}
+
+#clear-button:hover{
+    color: white;
+    background-color: #0d5c63;
+    border: 1px solid white;
+}
