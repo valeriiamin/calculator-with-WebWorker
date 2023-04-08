@@ -11,19 +11,19 @@ window.addEventListener("load", function () {
             if (window.Worker) {
                 switch (btn.textContent) {
                     case "+":
-                        worker = new Worker("/script/worker1.js");
+                        worker = new Worker("script/worker1.js");
                         sendWorker(worker, input1, input2, result);
                         break;
                     case "-":
-                        worker = new Worker("/script/worker2.js");
+                        worker = new Worker("script/worker2.js");
                         sendWorker(worker, input1, input2, result);
                         break;
                     case "*":
-                        worker = new Worker("/script/worker3.js");
+                        worker = new Worker("script/worker3.js");
                         sendWorker(worker, input1, input2, result);
                         break;
                     case "/":
-                        worker = new Worker("/script/worker4.js");
+                        worker = new Worker("script/worker4.js");
                         sendWorker(worker, input1, input2, result);
                         break;
                     case "Clear":
